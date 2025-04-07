@@ -414,7 +414,7 @@
 
 	.responisve-logo,
 	.responsive-header-social-btn {
-		display: block;
+		display: block !important;
 	}
 
 	.header-social-links {
