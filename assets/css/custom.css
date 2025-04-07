@@ -304,6 +304,10 @@ input[type="number"]::-webkit-outer-spin-button {
 	overflow: hidden;
 }
 
+.mt-50 {
+	margin-top: 50px;
+}
+
 .btn,
 .basic-btn {
 	font-family: var(--secondary-font);
@@ -1656,6 +1660,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-size: 19px;
 	font-weight: 700;
 	color: var(--color-white);
+	margin-bottom: 0;
 }
 
 .bannerReviewData .dataLeft figure {
@@ -1872,6 +1877,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .projectCard {
 	position: relative;
+	overflow: hidden;
 }
 
 .projectCard::before {
@@ -2246,3 +2252,204 @@ input[type="number"]::-webkit-outer-spin-button {
 .footerReviewList .listItem:not(:last-child) {
 	margin-bottom: 15px;
 }
+
+.serviceBanner {
+	padding: 250px 0 100px;
+}
+
+.serviceBanner .banner-content-outer {
+	position: static;
+	padding: 0;
+}
+
+.serviceBanner .bannerDataBottom,
+.serviceBanner .bannerReviewData {
+	position: static;
+	padding: 0;
+
+}
+
+.serviceBanner .bannerReviewData {
+	margin-top: 90px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.serviceTransformationWrapper::before {
+	bottom: 0;
+	left: 0;
+	right: auto;
+	background-image: url(../images/kitchen-transformation-watermark.svg);
+	width: 295px;
+	height: 346px;
+	background-repeat: no-repeat;
+}
+
+.serviceTransformationWrapper .whoWeAreText {
+	max-width: 630px;
+	padding-left: 0;
+	padding-right: 50px;
+}
+
+.serviceSatisfactionWrapper {
+	background-color: #FFFBF1;
+}
+
+.serviceSatisfactionWrapper .section-heading {
+	max-width: 600px;
+	padding-left: 40px;
+
+}
+
+.serviceSatisfactionWrapper .section-heading h2 {
+	color: #343332;
+}
+
+.serviceSatisfactionWrapper .section-heading p {
+	color: #353535;
+}
+
+.serviceWorkProcessWrapper .workProcessBox .dataBox {
+	padding: 22px;
+	min-height: 260px;
+}
+
+.serviceWorkProcessWrapper .workProcessBox .dataBox h3 {
+	color: var(--color-white);
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: 40;
+}
+
+.serviceProjectWrapper .projectCard::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	top: auto;
+	height: 130px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.38) 8.57%, rgba(0, 0, 0, 0) 190%);
+	opacity: 0;
+	transform: translateY(100%);
+	transition: var(--primary-transition);
+}
+
+.serviceProjectWrapper .swiper-slide-active .projectCard::before {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.faqWrapper .section-heading h2 {
+	color: #2E2E2E;
+	margin-bottom: 50px;
+}
+
+/* accordion */
+.faqWrapper {
+	background-color: #FAFAFA;
+}
+
+.faq_acrdn .accordion-item {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #E0E0E0;
+	margin: 0 0 30px;
+	border-radius: 0;
+	position: relative;
+	overflow: hidden;
+	padding: 0 0 30px;
+	border-radius: 15px;
+	transition: all 0.4s ease-in-out;
+	counter-increment: faq-counter;
+}
+
+.faq_acrdn .accordion-item .accordion-header {
+	padding: 0;
+	border: 0;
+	background: transparent;
+	margin: 0;
+	border-radius: 0px !important;
+}
+
+.faq_acrdn .accordion-item .accordion-header .accordion-button {
+	font-family: var(--heading-font);
+	padding: 0 65px 0 0;
+	display: block;
+	width: 100%;
+	font-size: 31px;
+	line-height: 1.4;
+	text-decoration: none !important;
+	color: #363636;
+	font-weight: 400;
+	position: relative;
+	text-align: left;
+	background-color: transparent;
+	white-space: normal;
+	letter-spacing: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	transition: 0.3s ease-in;
+}
+
+.faq_acrdn .accordion-button:focus {
+	box-shadow: none;
+}
+
+.faq_acrdn .accordion-button::after {
+	content: "\f107";
+	font-family: "Line Awesome Free";
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	width: 28px;
+	height: 28px;
+	font-size: 18px;
+	font-weight: 900;
+	color: #fff;
+	transition: all 0.3s ease-in;
+	border: 0;
+	background: var(--primary-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotateX(180deg);
+}
+
+.faq_acrdn .accordion-button.collapsed:after {
+	content: "\f107";
+	background: #4D4D4D;
+	top: 8px;
+	transform: rotateX(0);
+}
+
+.faq_acrdn .accordion-body {
+	padding: 30px;
+	padding-bottom: 0;
+	padding-left: 0;
+	border-top: 0;
+	transition: 0.3s ease-in;
+}
+
+.faq_acrdn .accordion-body p {
+	color: #313131;
+	font-size: 19px;
+}
+
+.accordion-item:has(.accordion-button[aria-expanded="true"]) {
+	box-shadow: 0px 4px 54px 4px #0000000A;
+	background-color: #fff;
+	border-color: transparent;
+	padding-top: 30px;
+}
+
+.faq_acrdn .accordion-item .accordion-header .accordion-button[aria-expanded="true"] {
+	padding: 0 30px 0;
+}
+
+.accordion-item:has(.accordion-button[aria-expanded="true"]) .accordion-body {
+	padding-left: 30px;
+}
+
+/* accordion */
