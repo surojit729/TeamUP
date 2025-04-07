@@ -330,12 +330,14 @@
 
 	.banner-content-outer {
 		top: 170px;
+		text-align: center;
 	}
 
 	.whoWeAreText {
 		max-width: 100%;
 		padding-left: 0;
 		margin-top: 40px;
+		text-align: center;
 	}
 
 	.service-we-offer-wrapper .section-heading .d-flex {
@@ -459,6 +461,7 @@
 
 	.service-we-offer-wrapper .section-heading {
 		margin-bottom: 50px;
+		text-align: center;
 	}
 
 	.section-heading p,
@@ -471,11 +474,13 @@
 	}
 
 	.whyUsWrapper .whyUsVideo {
-		height: 1360px;
+		height: 1430px;
+		text-align: center;
 	}
 
 	.whyUsWrapper .container {
 		top: 60px;
+		text-align: center;
 	}
 
 	.whayUsBox {
@@ -485,11 +490,11 @@
 	}
 
 	.whyUsWrapper [class*="col-"] {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
 
 	.whyUsWrapper .row {
-		margin-bottom: -30px;
+		margin-bottom: -50px;
 	}
 
 	.projectSliderOuter {
@@ -547,11 +552,38 @@
 
 	.footerLogoOuter {
 		padding-bottom: 0;
+		border-bottom: 0;
 	}
 
 	.footerLogoOuter .d-flex {
 		flex-direction: column-reverse;
 		align-items: flex-start !important;
 		gap: 30px;
+	}
+
+	.bannerReviewData {
+		margin: 30px auto 0;
+	}
+
+	.projectCard .data,
+	.testimonialContentOuter .section-heading h2,
+	.service-slider-outer .service-slide-card .data,
+	.footer-logo,
+	.footer-widget {
+		text-align: center;
+	}
+
+	.whayUsBox .media {
+		margin: 0 auto;
+	}
+
+	.testimonialBox .reviewText p {
+		text-align: center;
+		font-size: 17px;
+	}
+
+	.footer-logo {
+		max-width: 190px;
+		margin: 0 auto;
 	}
 }
