@@ -71,6 +71,15 @@ $(document).ready(function () {
             nextEl: '.bannerThumbSlider .swiper-button-next',
             prevEl: '.bannerThumbSlider .swiper-button-prev',
         },
+        breakpoints: {
+            318: {
+                slidesPerView: 2.3,
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+        },
     });
 
     var bannerMainSlider = new Swiper('.bannerSlider .swiper', {
@@ -109,7 +118,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             318: {
-                slidesPerView: 1.3,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             992: {
@@ -143,7 +152,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             318: {
-                slidesPerView: 1.3,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             992: {
@@ -168,7 +177,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             318: {
-                slidesPerView: 1.18,
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             768: {
