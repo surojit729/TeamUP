@@ -2294,7 +2294,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .serviceTransformationWrapper .whoWeAreText {
 	max-width: 630px;
 	padding-left: 0;
-	padding-right: 50px;
+	padding-right: 40px;
 }
 
 .serviceSatisfactionWrapper {
@@ -2458,3 +2458,40 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* accordion */
+.shortBanner {
+	padding: 250px 0 150px;
+}
+
+.shortBanner .banner-content-outer {
+	position: static;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.shortBanner .bannerReviewData {
+	position: static;
+}
+
+.whoWeAreText h2 span {
+	display: block;
+}
+
+.ourStoryWrapper {
+	background-color: #FFFBF1;
+}
+
+.ourStoryWrapper .whoWeAreText h3 {
+	font-size: 38px;
+	color: #292929;
+	margin-bottom: 28px;
+}
+
+.aboutTestimonialWrapper .testimonialMedia {
+	left: auto;
+}
+
+.aboutTestimonialWrapper .testimonialContentOuter {
+	margin-left: 0;
+}
