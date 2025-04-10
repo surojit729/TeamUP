@@ -2698,3 +2698,111 @@ input[type="number"]::-webkit-outer-spin-button {
 	opacity: 1;
 	transform: translate(-50%, -50%) scale(1);
 }
+
+.contactFormWrapper {
+	background-color: #17181D;
+}
+
+.contactFormWrapper .section-heading p {
+	font-size: 20px;
+}
+
+.contactFormWrapper .contact-form-outer {
+	background-color: var(--color-white);
+	padding: 45px;
+	border-radius: 20px 20px 0 0;
+	max-width: 970px;
+	margin: 50px auto 0;
+}
+
+.contactFormWrapper .input-field .form-control {
+	color: #272727;
+	background-color: #fff;
+	border: 1px solid #E9E9E9;
+	font-weight: 500 !important;
+}
+
+.contactFormWrapper .input-field .form-control::-webkit-input-placeholder {
+	color: #272727;
+}
+
+.contactFormWrapper .input-field .form-control::-moz-placeholder {
+	color: #272727;
+}
+
+.contactFormWrapper .input-field .form-control:-ms-input-placeholder {
+	color: #272727;
+}
+
+.contactFormWrapper .input-field .form-control::-ms-input-placeholder {
+	color: #272727;
+}
+
+.contactFormWrapper .input-field .form-control::placeholder {
+	color: #272727;
+}
+
+.contactFormWrapper .input-field .form-control:focus {
+	border-color: var(--primary-color);
+}
+
+.contactFormWrapper .input-field {
+	margin-bottom: 25px;
+}
+
+.contactFormWrapper .form-row {
+	margin: 0 -13px;
+}
+
+.contactFormWrapper .form-row>.col,
+.contactFormWrapper .form-row>[class*="col-"] {
+	padding-right: 13px;
+	padding-left: 13px;
+}
+
+.contactFormWrapper .input-field .select-field .bootstrap-select>.dropdown-toggle {
+	border: 1px solid #E9E9E9 !important;
+	background-color: #fff !important;
+}
+
+.contactFormWrapper .input-field .select-field .filter-option-inner,
+.contactFormWrapper .input-field .select-field .bootstrap-select>.bs-placeholder .filter-option-inner {
+	color: #272727 !important;
+}
+
+.contactFormWrapper .submit-field .btn {
+	font-family: var(--secondary-font);
+	position: static;
+	padding-top: 15px;
+	font-size: 18px;
+	border-radius: 30px;
+}
+
+.contactFormWrapper .submit-field {
+	height: 100%;
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+.contactFormWrapper .submit-field .icon {
+	position: absolute;
+	top: 11px;
+	left: auto;
+	right: 20px;
+	transform: translateX(0) rotate(45deg);
+	z-index: 11;
+	color: #fff;
+	font-size: 24px;
+}
+
+.contactFormWrapper .submit-field:hover .icon {
+	transform: translateX(0) rotate(90deg);
+	color: var(--primary-color);
+}
+
+.mapWrapper iframe {
+	width: 100%;
+	height: 550px;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
