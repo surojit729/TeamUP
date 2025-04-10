@@ -191,4 +191,50 @@ $(document).ready(function () {
         },
     });
 
+    //filter
+    jQuery(".filters ul li").click(function () {
+        jQuery(".filters ul li").removeClass("activefilter")
+        jQuery(this).addClass("activefilter")
+
+        var data = jQuery(this).attr("data-filter")
+        $grid.isotope({
+            filter: data,
+        })
+    })
+
+    var $grid = jQuery(".grid").isotope({
+        itemSelector: ".all",
+        percentPosition: true,
+        masonry: {
+            columnWidth: ".all",
+        },
+    })
+    /*
+    // Function to check if all items are visible and add/remove class
+    function checkAllVisible() {
+        var totalItems = $grid.data("isotope").items.length
+        var visibleItems = $grid.isotope("getFilteredItemElements").length
+
+        // If all items are visible, add the 'all-visible' class
+        if (visibleItems === totalItems) {
+            jQuery(".grid").addClass("all-visible")
+        } else {
+            jQuery(".grid").removeClass("all-visible")
+        }
+    }
+
+    // Run check when Isotope is initialized and items are laid out
+    $grid.on("arrangeComplete", function () {
+        checkAllVisible() // Check visibility on each filtering action
+    })
+
+    // Run the check on initial page load
+    checkAllVisible()
+*/
+    // Filter items on button click
+    $(".filter-buttons").on("click", "button", function () {
+        var filterValue = $(this).attr("data-filter")
+        $grid.isotope({ filter: filterValue })
+    })
+
 });

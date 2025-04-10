@@ -123,7 +123,7 @@
 
 	.hdr_menu li.menu-item-has-children .sub-menu a:hover {
 		color: #ff6f20;
-		padding-left: 0;
+		padding-left: 35px;
 	}
 
 	.hdr_menu li.menu-item-has-children.current-menu-item>a {
@@ -286,6 +286,10 @@
 		padding-left: 0;
 	}
 
+	.hdr_menu li.menu-item-has-children:hover>.sub-menu li {
+		padding: 0;
+	}
+
 	.header-cta-btn {
 		margin-right: 50px;
 	}
@@ -337,7 +341,6 @@
 		max-width: 100%;
 		padding-left: 0;
 		margin-top: 40px;
-		text-align: center;
 	}
 
 	.service-we-offer-wrapper .section-heading .d-flex {
@@ -366,6 +369,21 @@
 
 	.workProcessBox {
 		margin-bottom: 55px;
+	}
+
+	.serviceTransformationWrapper .whoWeAreText {
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.serviceSatisfactionWrapper .section-heading {
+		max-width: 100%;
+		padding-left: 0;
+	}
+
+	.whoWeArePic img {
+		width: 100%;
 	}
 }
 
@@ -475,7 +493,7 @@
 	}
 
 	.whyUsWrapper .whyUsVideo {
-		height: 1430px;
+		height: 1450px;
 		text-align: center;
 	}
 
@@ -586,5 +604,37 @@
 	.footer-logo {
 		max-width: 190px;
 		margin: 0 auto;
+	}
+
+	.whoWeAreText {
+		text-align: center;
+	}
+
+	.shortBanner .banner-content-outer {
+		flex-direction: column;
+	}
+
+	.shortBanner {
+		padding: 170px 0 80px;
+	}
+
+	.ourStoryWrapper .whoWeAreText h3 {
+		font-size: 24px;
+	}
+
+	.footerReviewList {
+		margin-left: 70px;
+	}
+
+	.projectCard figure {
+		height: 380px;
+	}
+
+	.projectCard .data p {
+		font-size: 17px;
+	}
+
+	.testimonialSlider .swiper-pagination {
+		text-align: center;
 	}
 }

@@ -1391,8 +1391,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .input-field .select-field .filter-option-inner {
-	font-size: 14px;
-	color: #000000;
+	font-size: 16px;
+	color: #fff;
 }
 
 .input-field .select-field .bootstrap-select .dropdown-menu li a {
@@ -1485,6 +1485,9 @@ input[type="number"]::-webkit-outer-spin-button {
 	border-color: #c3e6cb;
 	font-size: 15px;
 	text-align: center;
+	font-weight: 500;
+	padding: 8px;
+	border-radius: 6px;
 }
 
 .wpcf7-form-control-wrap>label {
@@ -2494,4 +2497,204 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .aboutTestimonialWrapper .testimonialContentOuter {
 	margin-left: 0;
+}
+
+.projectWrapper {
+	padding-bottom: 80px;
+}
+
+.filtersMenuOuter {
+	background-color: #17181D;
+	padding-top: 70px;
+	min-height: 305px;
+}
+
+.projectWrapper .filters {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.projectWrapper .filters ul {
+	padding: 0;
+}
+
+.projectWrapper .filters ul li {
+	font-family: var(--secondary-font);
+	list-style: none;
+	display: inline-block;
+	padding: 6px 18px;
+	cursor: pointer;
+	position: relative;
+	text-transform: capitalize;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #fff;
+	border-radius: 8px;
+}
+
+
+.projectWrapper .filters ul li:hover {
+	color: #fff;
+	background-color: var(--secondary-color);
+	transition: all 0.3s;
+}
+
+.projectWrapper .filters ul li.activefilter {
+	color: #fff;
+	background-color: var(--primary-color);
+	transition: all 0.3s;
+}
+
+.projectWrapper .filters-content {
+	margin-top: -85px;
+}
+
+.projectWrapper .filters-content .show {
+	opacity: 1;
+	visibility: visible;
+	transition: all 350ms;
+}
+
+.projectWrapper .filters-content .hide {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 350ms;
+}
+
+.filters-content .projectCard::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	top: auto;
+	height: 130px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.38) 8.57%, rgba(0, 0, 0, 0) 190%);
+	transition: var(--primary-transition);
+}
+
+.filters-content [class*="col-"] {
+	padding-bottom: 30px;
+}
+
+.projectDetailsWrapper {
+	padding-bottom: 100px;
+}
+
+.projectInfoOuter {
+	background-color: #17181D;
+	padding: 90px 0 130px;
+}
+
+.projectInfoOuter * {
+	color: var(--color-white);
+}
+
+.projectInfoOuter .section-heading {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.projectInfoOuter .section-heading h2 {
+	font-size: 50px;
+}
+
+.projectInfoOuter .section-heading .location p {
+	font-family: var(--secondary-font);
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.projectGallerRow {
+	margin-top: -30px;
+}
+
+.projectGalleryCard {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.projectGalleryCard .pic {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 480px;
+}
+
+.projectGalleryCard .pic a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+}
+
+.projectGalleryCard .pic img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.projectGalleryCard .pic::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: var(--color-black);
+	opacity: 0;
+	transform: scale(0.95);
+	transition: var(--primary-transition);
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* .projectGalleryCard .pic::after {
+	font-family: "Line Awesome Free";
+	content: "\f067";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 900;
+	color: var(--color-white);
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: var(--primary-color);
+} */
+
+.projectGalleryCard .pic::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0.50);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: url(../images/icon-plus.svg) var(--primary-color);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+	z-index: 2;
+	opacity: 0;
+	transition: var(--primary-transition);
+}
+
+.projectGalleryCard:hover .pic::before {
+	opacity: 0.44;
+	transform: scale(1);
+}
+
+.projectGalleryCard:hover .pic::after {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
 }
