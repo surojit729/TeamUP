@@ -28,7 +28,7 @@
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 991.91px) {
 	.logo {
 		width: 250px;
 		display: block;
@@ -385,6 +385,10 @@
 	.whoWeArePic img {
 		width: 100%;
 	}
+
+	.projectWrapper .projectCard .data h3 {
+		max-width: 200px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -484,7 +488,8 @@
 	}
 
 	.section-heading p,
-	.service-we-offer-wrapper .dataRight p {
+	.service-we-offer-wrapper .dataRight p,
+	.contactFormWrapper .section-heading p {
 		font-size: 16px;
 	}
 
@@ -636,5 +641,41 @@
 
 	.testimonialSlider .swiper-pagination {
 		text-align: center;
+	}
+
+	.projectWrapper .filters ul {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		padding-bottom: 15px;
+	}
+
+	.projectWrapper .filters ul li {
+		white-space: nowrap;
+	}
+
+	.projectWrapper .projectCard .data h3 {
+		max-width: 100%;
+	}
+
+	.projectInfoOuter .section-heading h2 {
+		font-size: 34px;
+	}
+
+	.projectGalleryCard .pic {
+		height: 380px;
+	}
+
+	.projectInfoOuter {
+		padding: 60px 0 90px;
+	}
+
+	.contactFormWrapper .contact-form-outer {
+		padding: 20px 15px;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.mapWrapper iframe {
+		height: 380px;
 	}
 }

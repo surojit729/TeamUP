@@ -2770,6 +2770,18 @@ input[type="number"]::-webkit-outer-spin-button {
 	color: #272727 !important;
 }
 
+.contactFormWrapper .input-field .dropdown-toggle::after {
+	border-top-color: #4D4D4D !important;
+}
+
+.contactFormWrapper .input-field .dropup .dropdown-toggle::after {
+	border-bottom-color: #4D4D4D;
+}
+
+.contactFormWrapper .input-field .select-field .bootstrap-select>.dropdown-toggle.show {
+	border-color: var(--primary-color) !important;
+}
+
 .contactFormWrapper .submit-field .btn {
 	font-family: var(--secondary-font);
 	position: static;
